@@ -38,4 +38,14 @@
             </table>
         </div>
     </div>
+    <div class="footer row mini-sitemap">
+      <div class="large-8 large-offset-2 medium-10 medium-offset-1 columns">
+          <h6 class="text-center">
+          <a href="#" class="mini-sitemap-details">Home</a> |
+          <a href="#" class="mini-sitemap-details">About</a> |
+          <a href="#" class="mini-sitemap-details">Contact Us</a> |
+          <a href="map" class="mini-sitemap-details">View Literacy Map</a>
+          </h6>
+      </div>
+    </div>
 </div>
