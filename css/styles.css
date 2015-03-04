@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('../fonts/Lato-Regular.tff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/*Document font setting.*/
+body{
+    background: url(../img/condom.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*background-color: #CF000F;*/
+    color: #999;
+    /*background-color: #999;*/
+    min-height: 100%
+}
+
+body b {
+    color: #666;
+}
+
+div#index-wrapper {
+    background-size: cover;
+}
+
+div#quiz-wrapper {
+    background-color: #F5F5F5;
+    height: 100%;
+}
+
+div#result-wrapper-odd {
+    background-color: #f1f2f2;
+    /*height: 100%;*/
+}
+
+div#result-wrapper-even {
+    background-color: #e6e7e8;
+    height: 100%;
+}
+
+/*header and footer outline and border setting*/
+.header, .footer{
+    font-family: 'Lato', sans-serif;
+    /*
+    outline: 1px solid #000000;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    -webkit-box-shadow: 0 3px 1px 1px #BDBDBD;
+    box-shadow: 0 3px 1px 1px #BDBDBD;
+    */
+}
+
+.button{
+    background-color: #666;
+}
+
+#donateButton {
+    width: 100%;
+    font-size: 40px;
+    background-color: #39d1b4;
+}
+#donateButton:hover {
+    background: #39B4B4
+}
+
+.row{
+    min-width: 100% !important;
+}
+
+#StartButton {
+    margin-top: 60px;
+}
+
+a.button:hover {
+    background: #ff6666;
+}
+
+.mini-sitemap-details {
+    color: #fff;
+}
+
+.mini-sitemap-details:hover {
+    color: #ff6666;
+}
+
+.top-bar .title-area {
+    margin-left: 100px !important;
+}
+
+.top-bar {
+    background-color: rgba(0,0,0,0.3);
+    height: 70px;
+}
+
+#title {
+    margin: 15px !important;
+    font-size: 40px;
+    color: white;
+}
+
+a .fa{
+    color: white;
+}
+
+a .fa:hover{
+    color: #aaa;
+}
+
+#welcome {
+    font-family: 'Lato';
+    font-size: 50px;
+    color: #fff !important;
+    margin-bottom:10px;
+}
+
+#total-points {
+    text-align: right;
+}
+
+.difficulty {
+    position: fixed;
+    bottom: 0;
+    background-color: #39d1b4;
+}
+
+#welcome-details {
+    font-family: 'Lato';
+    font-size: 25px;
+    margin-bottom: 40px;
+    color: #fff;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.footer.row {
+    margin-bottom: 20px !important;
+}
+
+.mini-sitemap {
+    margin-top: 120px;
+}
+
+.hover{
+    outline: 1px solid #000000;
+    -webkit-box-shadow: 1px 3px 1px 1px #BDBDBD;
+    box-shadow: 0 3px 1px 1px #BDBDBD;
+}
+
+#doneButton {
+    float: center;
+}
+
+.end-container {
+    margin-top:30px;
+}
+
+#mapContainer {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.button.btn-choices {
+    width: 100%;
+    height: 50px;
+    background-color: #E76255;
+}
+
+#question {
+    font-size: 30px;
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.question-card {
+    background-color: #386773;
+}
+
+.progress {
+    border: 1px solid #aaa;
+}
+
+.choice-container {
+    background-color: #E76255;
+}
+
+#pts {
+    padding-top: 15px;
+    font-size: 25px;
+    margin-right: 100px;
+}
+
+#difficulty {
+    font-size: 25px;
+    color: #fff;
+}
+
+#diff2 {
+    padding-top: 15px;
+}
+
+#icons {
+    margin-left: 70px;
+    padding-left: 36px;
+}
+
+#knowRH {
+    margin-right: 70px;
+    padding-right: 36px;
+}
