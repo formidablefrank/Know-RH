@@ -1,27 +1,41 @@
 <div id="index-wrapper">
     <div class="row">
-        <h1>View Training Schedules</h1>
+        <div class="text-center large-8 large-offset-2 medium-10 medium-offset-2 columns">
+            <h1 class="" id="welcome"><strong>View Training Schedules</strong></h1>
+        </div>
     </div>
     <div class="row">
-        <table>
-            <tr>
-                <th>Column1</th>
-                <th>Column2</th>
-                <th>Column3</th>
-                <th>Column4</th>
-            </tr>
-            <tr>
-                <td>Sched1</td>
-                <td>Description1</td>
-                <td>Date1</td>
-                <td>Venue1</td>
-            </tr>
-            <tr>
-                <td>Sched2</td>
-                <td>Description2</td>
-                <td>Date2</td>
-                <td>Venue2</td>
-            </tr>
-        </table>
+        <div class="large-12 large-centered columns text-center">
+            <table>
+              <thead>
+                <tr>
+                  <th width="200">Schedule</th>
+                  <th>Description</th>
+                  <th width="150">Date</th>
+                  <th width="150">Venue</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
     </div>
 </div>
