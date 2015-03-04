@@ -81,6 +81,8 @@ class Homepage extends CI_Controller {
 
 	public function viewsched(){
 		$data['title'] = 'KnowRH | Training Schedules';
+		$this->load->view('templates/header', $data);
 		$this->load->view('viewsched', $data);
+		$this->load->view('templates/footer', $data);
 	}
 }
