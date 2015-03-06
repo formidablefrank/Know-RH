@@ -21,6 +21,7 @@ class Homepage extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->model('quiz');
+		$this->load->model('schedules');
 	}
 
 	public function index(){
@@ -81,6 +82,25 @@ class Homepage extends CI_Controller {
 
 	public function viewsched(){
 		$data['title'] = 'KnowRH | Training Schedules';
+		$data['schedules'] = $this->schedules->getAllSchedules();
 		$this->load->view('viewsched', $data);
+	}
+
+	public function deleteSched($id){
+		$this->schedules->deleteSchedule($id);
+		$data['title'] = 'KnowRH | Training Schedules';
+		$data['schedules'] = $this->schedules->getAllSchedules();
+		redirect('/homepage/viewsched', 'refresh');
+	}
+
+	public function newSched(){
+		$data['title'] = 'KnowRH | Create New Schedule';
+		$this->load->view('newsched', $data);
+	}
+
+	public function insertSched(){
+		$data['title'] = 'KnowRH | Create New Schedule';
+		$this->load->view('newsched', $data);
+		redirect('/homepage/viewsched', 'refresh');
 	}
 }
