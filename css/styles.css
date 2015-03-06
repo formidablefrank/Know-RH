@@ -225,3 +225,8 @@ a .fa:hover{
     margin-right: 70px;
     padding-right: 36px;
 }
+
+table {
+  width: 800px;
+  margin: 10px auto;
+}
