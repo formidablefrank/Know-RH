@@ -96,13 +96,22 @@ class Homepage extends CI_Controller {
 	}
 
 	public function newSched(){
-		$data['title'] = 'KnowRH | Create New Schedule';
+		$data['title'] = 'KnowRH | New Schedule';
 		$this->load->view('newsched', $data);
 	}
 
 	public function insertSched(){
-		$data['title'] = 'KnowRH | Create New Schedule';
+		$data['title'] = 'KnowRH | View Schedule';
+		$ev_name = $this->input->post('ev_name', TRUE);
+		$desc = $this->input->post('desc', TRUE);
+		$ve_name = $this->input->post('ve_name', TRUE);
+		$address = $this->input->post('address', TRUE);
+		$target = $this->input->post('target', TRUE);
+		$req = $this->input->post('req', TRUE);
+		$start_date = $this->input->post('start_date', TRUE);
+		$end_date = $this->input->post('end_date', TRUE);
+		$this->schedules->insertSchedule($ev_name, $desc, $ve_name, $address, $target, $req, $start_date, $end_date);
+		$data['title'] = 'KnowRH | New Schedule';
 		$this->load->view('newsched', $data);
-		redirect('/homepage/viewsched', 'refresh');
 	}
 }
