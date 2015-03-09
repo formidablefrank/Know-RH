@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 11, 2015 at 01:25 AM
+-- Generation Time: Mar 09, 2015 at 09:55 AM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.9
 
@@ -23,34 +23,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `questions`
---
-
-CREATE TABLE IF NOT EXISTS `questions` (
-  `question_id` int(11) NOT NULL AUTO_INCREMENT,
-  `difficulty` int(11) NOT NULL,
-  `question_text` varchar(50) NOT NULL,
-  `choice1` varchar(20) NOT NULL,
-  `choice2` varchar(20) NOT NULL,
-  `choice3` varchar(20) NOT NULL,
-  `choice4` varchar(20) NOT NULL,
-  `question_answer` text NOT NULL,
-  PRIMARY KEY (`question_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
-
---
--- Dumping data for table `questions`
---
-
-INSERT INTO `questions` (`question_id`, `difficulty`, `question_text`, `choice1`, `choice2`, `choice3`, `choice4`, `question_answer`) VALUES
-(1, 1, 'This is a sample question', 'sample choice 1', 'sample choice 2', 'sample choice 3', 'sample choice 4', '0'),
-(2, 2, 'Another sample question', 'sample choice 1b', 'sample choice 2b', 'sample choice 3b', 'sample choice 4b', '0'),
-(3, 2, 'third sample questnio', 'c1', 'c2', 'c3', 'c4', '3'),
-(4, 3, '4th sample q', 'ch1', 'ch2', 'ch3', 'ch4', '3');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `users`
 --
 
@@ -66,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `total_correct` int(11) NOT NULL,
   `total_points` int(11) NOT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=89 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=74 ;
 
 --
 -- Dumping data for table `users`
@@ -77,8 +49,9 @@ INSERT INTO `users` (`user_id`, `user_timestamp`, `user_name`, `user_lat`, `user
 (2, '0000-00-00 00:00:00', 'frankie', 12, 122, 2, 0, 0, 2, 10),
 (3, '2015-01-10 23:40:09', 'franco', 14.1, 121.01, 4, 0, 0, 4, 20),
 (64, '2015-01-11 05:06:46', 'asdf', 14.6397, 121.075, 2, 2, 0, 0, 30),
-(65, '2015-01-11 05:19:38', 'upcsi', 14.645, 121.085, 1, 1, 1, 3, 30),
-(66, '2015-01-11 05:21:16', 'up', 14.9, 121.5, 2, 0, 0, 2, 10);
+(71, '2015-01-11 11:35:08', 'uupcsi', 14.6397, 121.075, 0, 0, 0, 0, 0),
+(72, '2015-03-01 00:15:13', 'Frank', 14.5995, 120.984, 1, 0, 0, 0, 5),
+(73, '2015-03-07 00:47:00', 'Frank', 14.6451, 121.064, 4, 0, 2, 0, 50);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
